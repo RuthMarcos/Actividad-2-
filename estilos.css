@@ -1,0 +1,40 @@
+
+table{
+	/*JUNTA LOS BORDES DE LA TABLA (SEÁRATE)*/
+	border-collapse: collapse;
+	width: 100%;
+
+}
+/*COLOR DE BORDE DE ARRIBA*/
+td{
+	border-bottom: 1px solid red;
+}
+
+/*ESPACIO EN CADA CELDA*/
+/*ALINEAR EL TEXTO*/
+th, td{
+	padding: 8px;
+	text-align: center;
+}
+/*RENGLONES PARES*/
+tr:nth-child(even){
+	background-color: #FFE4E1;
+}
+/*RENGLONES NONES*/
+tr:nth-child(odd){
+	background-color: #FFEFD5;
+}
+/*COLOR DE BORDE DE ABAJO*/
+th{
+	border-bottom: 1px solid blue;
+	background-color: #CD5C5C; 
+}
+
+ tbody>tr:hover{
+	background-color: #E9967A; 
+	color: white;
+}
+p{
+	color:blue;
+	background-color: #18EB91; 
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	 <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	 <script>
+	 	
+	 	$(document).ready(function () {
+	 		$('[data-toggle="popover"]').popover();
+	 		// body...
+	 	});
+	 </script>
+	 <style>
+	 form
+	 {
+	 	/*margen inf y sup es de 5%
+	 	margen  
+	 	*/
+	 	margin:5% 25%;
+	 	/* matgen superior*/
+	 	margin-top:8%;
+	 }
+	</style>
+</head>
+<body class="container col-4">
+<form action="altaProdRuthPilares.php" method="get">
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Identificador del producto">
+			<label>Nombre</label>
+		 </a>
+		 
+		<input type="text" class="form-control" name="CTnombre">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Direccion del usuario">
+		<label>Dirección: </label>
+		</a>
+		<input type="text"  class="form-control" name="CTdireccion">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Telefono del usuario">
+		<label>Telefono: </label>
+		</a>
+		<input type="decimal" class="form-control"  name="CTtelefono">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Correo del usuario">
+		<label>Correo Electronico: </label>
+		</a>
+		<input type="text" class="form-control" name="CTcorreo">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Comentarios del usuario">
+		<label>Comentarios: </label>
+		</a>
+		<textarea type="text" class="form-control" name="CTcomentario" rows="6" cols="40"></textarea> 
+		
+	</div>
+	<input type="submit" class="btn btn-info" value="Enviar">
+	<input type="reset" class="btn btn-info" value="Borrar">
+</form>
+</body>
+</html>

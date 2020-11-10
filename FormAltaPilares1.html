@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	 <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	 <script>
+	 	
+	 	$(document).ready(function () {
+	 		$('[data-toggle="popover"]').popover();
+	 		// body...
+	 	});
+	 </script>
+	 <style>
+	 form
+	 {
+	 	/*margen inf y sup es de 5%
+	 	margen  
+	 	*/
+	 	margin:5% 25%;
+	 	/* matgen superior*/
+	 	margin-top:8%;
+	 }
+	</style>
+</head>
+<body class="container col-4">
+<form action="altaProdRuthPilares1.php" method="post">
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Identificador del producto">
+			<label>Id Producto</label>
+		 </a>
+		 
+		<input type="text" class="form-control" name="CTidprod">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Direccion del usuario">
+		<label>Descripcion </label>
+		</a>
+		<input type="text"  class="form-control" name="CTdescripcion">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Telefono del usuario">
+		<label>Precio </label>
+		</a>
+		<input type="decimal" class="form-control"  name="CTprecio">
+	</div>
+	<div class="form-group">
+		<a href="#" title="Significado" data-toggle="popover" data-trigger="hover" data-content="Unidades de empaque">
+		<label>Unidades: </label>
+		</a>
+		<select name="CTunidades" class="form-control">
+			<option value="pieza">Pieza</option>
+			<option value="kilo">Kilo</option>
+			<option value="caja">Caja</option>
+			<option value="gramos">Gramos</option>
+		</select>
+	</div>
+	<input type="submit" class="btn btn-info" value="Enviar">
+	<input type="reset" class="btn btn-info" value="Borrar">
+</form>
+</body>
+</html>
